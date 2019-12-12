@@ -5,14 +5,16 @@ import { Actions } from 'react-native-router-flux';
 let deviceHeight = Dimensions.get("window").height;
 let deviceWidth = Dimensions.get("window").width;
 
+//required props: 
+//name
+//imageURL
+
 const profileBar = props => {
     return(
         <View style={styles.topBar}>
           <View style={styles.imageContainer}>
             <Image
-              source={{
-                uri: "https://www.pace.edu/sites/default/files/styles/news_item_675x450/public/marijoRussel_OGrady_DAILY_0.jpg?itok=viugcOqU"
-              }}
+              source={{ uri: props.image }}
               style={styles.imageMain}
             />
           </View>

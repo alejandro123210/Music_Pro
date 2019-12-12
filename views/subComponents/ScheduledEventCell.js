@@ -5,6 +5,13 @@ import { Actions } from 'react-native-router-flux';
 let deviceHeight = Dimensions.get("window").height;
 let deviceWidth = Dimensions.get("window").width;
 
+
+//required props: 
+//name
+//time
+//key
+
+
 const scheduledEventCell = props => {
     return(
         <View key={props.name} style={styles.listContainer}>
@@ -15,10 +22,6 @@ const scheduledEventCell = props => {
         </View>
     );
 }
-
-//required props: 
-//name
-//time
 
 const styles = StyleSheet.create({
     listContainer: {

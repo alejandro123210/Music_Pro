@@ -42,7 +42,10 @@ class StudentDash extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ProfileBar name={JSON.stringify(this.props.userData['name']).replace(/['"]+/g, '')}/>
+        <ProfileBar 
+            name={JSON.stringify(this.props.userData['name']).replace(/['"]+/g, '')}
+            image="https://api.time.com/wp-content/uploads/2017/12/terry-crews-person-of-year-2017-time-magazine-facebook-1.jpg?quality=85"
+        />
         <View style={styles.dateBar}>
           <Text style={styles.dateText}>{this.state.date}</Text>
         </View>

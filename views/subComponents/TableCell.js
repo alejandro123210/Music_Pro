@@ -2,6 +2,13 @@ import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity, Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
+//required props:
+//image
+//name
+//instrument
+//location
+//key
+
 //required props are name, key, date, lastmessage
 const tableCell = props => {
 

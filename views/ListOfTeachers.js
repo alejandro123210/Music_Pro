@@ -80,7 +80,10 @@ handleTextChange = inputValue => {
   render() {
     return (
         <View style={styles.container}>
-            <ProfileBar name={JSON.stringify(this.props.userData['name']).replace(/['"]+/g, '')}/>
+            <ProfileBar 
+                name={JSON.stringify(this.props.userData['name']).replace(/['"]+/g, '')}
+                image="https://api.time.com/wp-content/uploads/2017/12/terry-crews-person-of-year-2017-time-magazine-facebook-1.jpg?quality=85"
+            />
             <View style={styles.searchBar}>
                 <Image 
                     source={{ uri: 'http://fa2png.io/media/icons/font-awesome/4-7-0/search/256/0/274156_none.png' }}
