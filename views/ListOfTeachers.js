@@ -79,19 +79,6 @@ handleTextChange = inputValue => {
     this.setState({ inputValue });
 };
 
-handleCalendarPress = () => {
-    Actions.SudentCalendar({userData: this.props.userData});
-}
-
-handleProfilePress = () => {
-}
-
-handleCheckPress = () => {
-    Actions.TeacherCalendar({userData: this.props.userData});
-}
-
-
-
   render() {
     return (
         <View style={styles.container}>

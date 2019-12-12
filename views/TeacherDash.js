@@ -73,18 +73,6 @@ class TeacherDash extends React.Component {
     this.setState({ inputValue });
   };
 
-  handleCalendarPress = () => {
-    Actions.CalendarTeacher({userData: this.props.userData});
-  };
-
-  handleProfilePress = () => {
-    Actions.StudentList({userData: this.props.userData});
-  };
-
-  handleTeacherDash = () => {
-    //Actions.TeacherDash({userData: this.props.userData});
-  };
-
   render() {
     return (
       // this is just random filler for the template, but this is where what the user sees is rendered

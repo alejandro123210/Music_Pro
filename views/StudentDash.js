@@ -30,7 +30,6 @@ class StudentDash extends React.Component {
     var date = new Date().getDate(); //Current Date
     var month = new Date().getMonth() + 1; //Current Month
     var year = new Date().getFullYear(); //Current Year
-
     this.setState({
       //Setting the value of the date time
       date:
@@ -40,16 +39,6 @@ class StudentDash extends React.Component {
 
   handleTextChange = inputValue => {
     this.setState({ inputValue });
-  };
-
-  handleCalendarPress = () => {
-    Actions.TeacherCalendar({userData: this.props.userData});
-  };
-  handleCalendarStudentPress = () => {
-    Actions.SudentCalendar({userData: this.props.userData});
-  };
-  handleProfilePress = () => {
-    Actions.TeacherList({userData: this.props.userData});
   };
 
   render() {
