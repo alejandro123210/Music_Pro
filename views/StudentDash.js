@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, Dimensions, ScrollView, TouchableHighlight } from "react-native";
-import { Actions } from "react-native-router-flux";
+import React from "react";
+import { Text, View, StyleSheet, Dimensions, ScrollView } from "react-native";
 import ProfileBar from './subComponents/ProfileBar'
-import * as firebase from 'firebase';
 import ScheduledEventCell from "./subComponents/ScheduledEventCell";
 
 let deviceHeight = Dimensions.get("window").height;

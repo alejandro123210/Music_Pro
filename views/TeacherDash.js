@@ -1,9 +1,7 @@
 //Teacher Dash screen is the main screen on the teacher side of the app
 //has to 3 link buttons but two of them link to the same screen for now
-import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, Dimensions, ScrollView, TouchableHighlight } from "react-native";
-import { Actions } from "react-native-router-flux";
-import * as firebase from 'firebase';
+import React from "react";
+import { Text, View, StyleSheet, Dimensions, ScrollView } from "react-native";
 import ProfileBar from "./subComponents/ProfileBar";
 import ScheduledEventCell from "./subComponents/ScheduledEventCell";
 

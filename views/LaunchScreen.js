@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, ImageBackground, Dimensions} from 'react-native';
-//for screen switching
 import { Actions } from 'react-native-router-flux';
-import * as firebase from 'firebase';
 
 let deviceHeight = Dimensions.get('window').height;
 let deviceWidth = Dimensions.get('window').width;

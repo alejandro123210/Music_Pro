@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Image, Dimensions, ScrollView, TextInput, TouchableHighlight } from 'react-native';
-import { Actions } from 'react-native-router-flux';
+import { View, StyleSheet, Image, Dimensions, ScrollView, TextInput } from 'react-native';
 import ProfileBar from './subComponents/ProfileBar'
-import * as firebase from 'firebase';
 import TableCell from './subComponents/TableCell';
 
 
