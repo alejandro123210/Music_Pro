@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, Image, Dimensions, ScrollView, TouchableHighlig
 import { Actions } from "react-native-router-flux";
 import ProfileBar from './subComponents/ProfileBar'
 import * as firebase from 'firebase';
+import ScheduledEventCell from "./subComponents/ScheduledEventCell";
 
 let deviceHeight = Dimensions.get("window").height;
 let deviceWidth = Dimensions.get("window").width;
@@ -19,7 +20,8 @@ class StudentDash extends React.Component {
     lessonsList: [
       {
         name: "Grace Jacobs",
-        time: "11 - 12 PM"
+        time: "11 - 12 PM",
+        key: 0
       }
     ]
   };
@@ -59,12 +61,11 @@ class StudentDash extends React.Component {
         </View>
         <ScrollView>
           {this.state.lessonsList.map(student => (
-            <View key={student.name} style={styles.listContainer}>
-              <View style={styles.nameContainer}>
-                <Text style={styles.nameText}>{student.name}</Text>
-                <Text style={styles.infoText}>{student.time}</Text>
-              </View>
-            </View>
+            <ScheduledEventCell 
+                name = { student.name }
+                time = { student.time }
+                key = {student.key}
+            />
           ))}
         </ScrollView>
       </View>

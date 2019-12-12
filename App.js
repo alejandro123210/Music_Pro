@@ -51,6 +51,7 @@ export default function App() {
               component = { ListOfTeachers }
               tabBarLabel = 'teachers'
               hideNavBar = { true }
+              gesturesEnabled = { false }
             />
         </Scene>
         <Scene key='TeacherMain' hideNavBar = { true }>
