@@ -54,7 +54,7 @@ export default function App() {
               gesturesEnabled = { false }
             />
         </Scene>
-        <Scene key='TeacherMain' hideNavBar = { true }>
+        <Scene key='TeacherMain' hideNavBar = { true } tabs={true} wrap={false}>
           <Scene
             key = 'TeacherDash'
             component = { TeacherDash }

@@ -141,53 +141,6 @@ const styles = StyleSheet.create({
         margin: 10,
         borderRadius: 10,
      },
-     listContainer: {
-         flexDirection: 'row',
-         width: (deviceWidth) - 5,
-         height: deviceHeight/8,
-         backgroundColor: 'white',
-         borderRadius: 15,
-         margin: 3,
-         borderWidth: 1,
-         borderBottomWidth: 2,
-         borderColor: 'grey',
-     },
-     nameContainer: {
-         width: (deviceWidth/4)*2,
-         flexDirection: 'column',
-     },
-     imageContainer: {
-         width: deviceWidth/4,
-         alignItems: 'center',
-         justifyContent: 'center'
-     },
-     checkContainer: {
-        width: deviceWidth/4,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-     nameText: {
-         fontSize: 16,
-         color: '#2c2828',
-         fontFamily: 'HelveticaNeue-Medium',
-         marginTop: 5,
-     },
-     infoText: {
-         fontSize: 14,
-         color: '#5b5b5b',
-         fontFamily: 'HelveticaNeue-Light',
-         marginTop: 2,
-     },
-     image:{
-         width: deviceWidth/5,
-         height: deviceWidth/5,
-         borderRadius: 35,
-     },
-    icon:{
-        width: deviceWidth/12,
-        height: deviceWidth/12, 
-        margin: 5,
-    },
     searchIcon:{
         width: deviceWidth/16,
         height: deviceWidth/16, 

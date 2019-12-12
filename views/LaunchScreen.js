@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
-        
     },
     buttonText: {
         fontSize: 30,
@@ -76,11 +75,7 @@ const styles = StyleSheet.create({
         paddingTop: '40%',
         color: 'white',
     }
-
-
 });
 
-
-
-  //this lets the component get imported other places
-  export default LaunchScreen;
+//this lets the component get imported other places
+export default LaunchScreen;
