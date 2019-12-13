@@ -20,37 +20,44 @@ class TeacherDash extends React.Component {
       {
         name: "S Jacobs",
         time: "11 - 12 PM",
-        key: 0
+        key: 0,
+        instrument: 'euphonium'
       },
       {
         name: "V Cookson",
         time: "12 - 1  PM",
-        key: 1
+        key: 1,
+        instrument: 'trombone'
       },
       {
         name: "B Jacobs",
         time: "2- 3 PM",
-        key: 2
+        key: 2,
+        instrument: 'trumpet'
       },
       {
         name: "Grace W",
         time: "3:30 - 4:30 PM",
-        key: 3
+        key: 3,
+        instrument: 'bass trombone'
       },
       {
         name: "Sa Jacobs",
         time: "5 - 6 PM",
-        key: 4
+        key: 4,
+        instrument: 'bass'
       },
       {
         name: "Grace S",
         time: "7 - 7:30 PM",
-        key: 5
+        key: 5,
+        instrument: 'piano'
       },
       {
         name: "D Jacobs",
         time: "8 - 9 PM",
-        key: 6
+        key: 6,
+        instrument: 'guitar'
       }
     ]
   };
@@ -88,6 +95,7 @@ class TeacherDash extends React.Component {
                 name = { student.name }
                 time = { student.time }
                 key = { student.key }
+                instrument = { student.instrument }
             />
           ))}
         </ScrollView>

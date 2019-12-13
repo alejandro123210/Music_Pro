@@ -19,7 +19,14 @@ class StudentDash extends React.Component {
       {
         name: "Grace Jacobs",
         time: "11 - 12 PM",
+        instrument: "guitar",
         key: 0
+      },
+      {
+        name: "Alexander Kamanev",
+        time: "1-2 PM",
+        instrument: "tuba",
+        key: 1
       }
     ]
   };
@@ -39,6 +46,10 @@ class StudentDash extends React.Component {
     this.setState({ inputValue });
   };
 
+  onScheduledEventPressed = () => {
+      alert("Cancel event?")
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -55,6 +66,8 @@ class StudentDash extends React.Component {
                 name = { student.name }
                 time = { student.time }
                 key = {student.key}
+                instrument = {student.instrument}
+                onScheduledEventPressed = {() => this.onScheduledEventPressed()}
             />
           ))}
         </ScrollView>
