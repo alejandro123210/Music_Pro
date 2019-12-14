@@ -46,7 +46,7 @@ export default function App() {
             <Scene 
               key = 'StudentDash'
               component = { StudentDash }
-              tabBarLabel = 'Me'
+              tabBarLabel = 'My Schedule'
               hideNavBar = { true }
               gesturesEnabled = { false }
             />
@@ -62,7 +62,7 @@ export default function App() {
           <Scene
             key = 'TeacherDash'
             component = { TeacherDash }
-            tabBarLabel = 'Me'
+            tabBarLabel = 'My Schedule'
             hideNavBar = { true }
             gesturesEnabled = { false }
           />

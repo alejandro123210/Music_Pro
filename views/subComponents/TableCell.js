@@ -12,8 +12,8 @@ import { Actions } from 'react-native-router-flux';
 //required props are name, key, date, lastmessage
 const tableCell = props => {
 
-    //action for normal press, goes to chat screen
     onPress = () => {
+        alert("YOU HATH PRESSED MY FACE AND NOW YOU SHALL PAY");
     }
 
     return (

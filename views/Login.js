@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, StyleSheet, TextInput, Dimensions, TouchableOpacity, ImageBackground } from "react-native";
-//Alejandro: only weirdos do this ^^^^
 import { Actions } from "react-native-router-flux";
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import * as firebase from 'firebase';
+
 
 let deviceHeight = Dimensions.get("window").height;
 let deviceWidth = Dimensions.get("window").width;
